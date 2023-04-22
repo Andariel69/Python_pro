@@ -8,4 +8,4 @@ response = requests.post('https://pokemonbattle.me:9104/pokemons' headers= train
     "name": "Бумер",
     "photo": "https://dolnikov.ru/pokemons/albums/001.png"
 })
-assert response.status_code = 201
+assert response.status_code == 201
