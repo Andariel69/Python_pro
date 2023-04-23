@@ -24,3 +24,10 @@ def test_parts_of_body(key, value):
     response = requests.get('https://pokemonbattle.me:9104/trainers', params={'trainer_id' : 4095})
     # response_body = response.text
     assert response.json()[key] == value
+
+
+def test_status_code():
+    response = requests.get('https://pokemonbattle.me:9104/trainers', params={'trainer_id' : 4095})
+    response_body = response.text
+    #status_code200
+    assert response.status_code == 200
