@@ -2,7 +2,7 @@ import requests
 
 #create_account
 response = requests.post('https://pokemonbattle.me:9104/trainers/reg', json={
-    "trainer_token": "19abc49a742406ed9cdeb924814d44fa",
+    "trainer_token": 'AnyToken',
     "email": "443332@.ru",
     "password": "Iloveqa1"
 })
@@ -10,7 +10,7 @@ response = requests.post('https://pokemonbattle.me:9104/trainers/reg', json={
 print (response.status_code)
 
 #variables
-token = "19abc49a742406ed9cdeb924814d44fa"
+token = 'AnyToken'
 URL = "https://pokemonbattle.me:9104/"
 num = f'мой токен это {token}'
 
